@@ -15,7 +15,6 @@ RUN apt-get update && \
         libpugixml-dev \
         ros-indigo-uvc-camera && \
     rm -rf /var/lib/apt/lists/*
-    # $$\
 
 # keep image up to date
 ADD setup.sh /usr/bin/docker-setup.sh
