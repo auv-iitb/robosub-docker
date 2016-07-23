@@ -3,7 +3,8 @@ Docker file for robosub
 
 ## Known Issues
 * Docker is in UTC
-* Ignore warnings about not able to create directory.
+* Ignore warnings about not able to create directory
+* Integration with GPU is not complete [Link 1](https://github.com/NVIDIA/nvidia-docker)[Link 2](http://wiki.ros.org/docker/Tutorials/Hardware%20Acceleration)
 
 ## Running Docker Image
 From anywhere run
