@@ -3,6 +3,7 @@ Docker file for robosub
 
 ## Known Issues
 * Ignore warnings about not able to create directory.
+* Integration with GPU is not tested [Link 1](https://github.com/NVIDIA/nvidia-docker)[Link 2](http://wiki.ros.org/docker/Tutorials/Hardware%20Acceleration)
 
 ## Running Docker Image
 To run with GPU, use the following command with ```nvidia-docker``` instead of ```docker```.
