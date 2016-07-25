@@ -2,10 +2,10 @@
 Docker file for robosub
 
 ## Known Issues
-* Docker is in UTC
 * Ignore warnings about not able to create directory.
 
 ## Running Docker Image
+To run with GPU, use the following command with ```nvidia-docker``` instead of ```docker```.
 From anywhere run
 
 ```
@@ -15,6 +15,7 @@ $ docker run -it \
     --user=$(id -u) \
     --env="DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \
+    --volume="/etc/localtime:/etc/localtime:ro" \
     --volume="/etc/group:/etc/group:ro" \
     --volume="/etc/passwd:/etc/passwd:ro" \
     --volume="/etc/shadow:/etc/shadow:ro" \
@@ -30,7 +31,7 @@ $ docker run -it \
     --device /dev/ttyS2:/dev/ttyS2:rw \
     --device /dev/ttyS3:/dev/ttyS3:rw \
     kunaltyagi/robosub:indigo \
-    /usr/bin/docker-setup.sh
+    /usr/bin/docker-startup.sh
 ```
 
 In order to run another command concurrently, use
