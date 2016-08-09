@@ -9,4 +9,4 @@ cd ..
 catkin_make
 source devel/setup.bash  # No need
 roscore
-cp -av CMakeLists-kinetic.txt CMakeLists.txt
+cp -av src/CMakeLists-kinetic.txt src/CMakeLists.txt

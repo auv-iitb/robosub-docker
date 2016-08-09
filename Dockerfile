@@ -16,6 +16,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
 #   apt-get upgrade -y && \
     apt-get install -y \
+        libcanberra-gtk-module \
         libfftw3-dev \
         libpugixml-dev \
         ros-indigo-uvc-camera && \

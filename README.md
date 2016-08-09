@@ -16,6 +16,7 @@ $ docker run -it \
     --user=$(id -u) \
     --env="DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \
+    --workdir="/home/$USER" \
     --volume="/etc/localtime:/etc/localtime:ro" \
     --volume="/etc/group:/etc/group:ro" \
     --volume="/etc/passwd:/etc/passwd:ro" \
